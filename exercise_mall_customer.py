@@ -7,10 +7,12 @@ Original file is located at
     https://colab.research.google.com/drive/1kckmiXamtdY7MyIZSU_utygDqqSIY61b
 """
 
-import seaborn as sns
+import streamlit as st
+import numpy as np
 import pandas as pd
+import seaborn as sns
+import sklearn as sk
 import matplotlib.pyplot as plt
-mc = pd.read_csv('/content/mall_customer.csv')
 
 mc.head()
 
