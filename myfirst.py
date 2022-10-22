@@ -1,4 +1,9 @@
-import seaborn as sns
-iris = sns.load_dataset('iris')
-import pandas as pd 
-sns.boxplot(data=iris)
+import streamlit as st
+import numpy as np
+import pandas as pd
+
+st.header("My first Streamlit App")
+st.write(pd.DataFrame({
+    'Intplan': ['yes', 'yes', 'yes', 'no'],
+    'Churn Status': [0, 0, 0, 1]
+}))
