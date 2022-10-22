@@ -30,9 +30,9 @@ model.fit(Xtrain, ytrain)
 y_model = model.predict(Xtest)
 
 from sklearn.metrics import accuracy_score
-accuracy_score(ytest, y_model)
+a = accuracy_score(ytest, y_model)
 
-print(classification_report(ytest, y_model))
+st.write(a)
 
 from sklearn.metrics import confusion_matrix 
 confusion_matrix(ytest, y_model)
@@ -42,7 +42,7 @@ from sklearn import metrics
 import numpy as np
 confusion_matrix = metrics.confusion_matrix(ytest, y_model)
 
-print(confusion_matrix)
+st.write(confusion_matrix)
 
 cm_display = metrics.ConfusionMatrixDisplay(confusion_matrix = confusion_matrix,display_labels=np.unique(y_mc))
 
@@ -50,6 +50,5 @@ cm_display.plot()
 plt.show()
 
 from sklearn.metrics import classification_report
-print(classification_report(ytest, y_model))
+st.write(classification_report(ytest, y_model))
 
-"""\\"""
