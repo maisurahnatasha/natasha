@@ -1,9 +1,12 @@
 import streamlit as st 
+import pandas as pd
+import seaborn as sns
+import pandas as pd
+import numpy as np 
 from sklearn.datasets import load_iris
 from sklearn import tree
 from sklearn.tree import plot_tree
 from sklearn.model_selection import train_test_split
-import seaborn as sns
 iris = sns.load_dataset('iris')
 
 X_iris = iris.drop('species', axis=1)  
