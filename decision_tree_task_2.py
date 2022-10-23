@@ -3,6 +3,7 @@ import pandas as pd
 import seaborn as sns
 import pandas as pd
 import numpy as np 
+import matplotlib.pyplot as plt
 from sklearn.datasets import load_iris
 from sklearn import tree
 from sklearn.tree import plot_tree
@@ -17,7 +18,8 @@ clf = tree.DecisionTreeClassifier()
 clf = clf.fit(Xtrain, ytrain)
 
 
-
+fig = plt.figure(figsize=(10, 4))
 clf.fit(Xtrain, ytrain) 
 tree.plot_tree(clf.fit(Xtrain, ytrain) )
+st.pyplot(fig)
 clf.score(Xtest, ytest)
