@@ -1,8 +1,15 @@
 import streamlit as st 
 import pandas as pd
+import seaborn as sns
+import pandas as pd
+import numpy as np 
+import matplotlib.pyplot as plt
 from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
-import seaborn as sns
+from sklearn.metrics import plot_confusion_matrix 
+from sklearn.metrics import classification_report 
+
+
 iris = sns.load_dataset('iris') # returns a pandas dataframe
 import pandas as pd
 
